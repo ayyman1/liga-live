@@ -43,7 +43,7 @@ async function loadMatches() {
     `).join("");
 
   } catch (error) {
-    matchesContainer.innerHTML = "تعذر تحميل المباريات. تحقق من API Token.";
+    matchesContainer.innerHTML = "خطأ: " + error.message;
     console.error(error);
   }
 }
