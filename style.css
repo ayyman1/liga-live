@@ -1,0 +1,155 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #080d18;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  line-height: 1.7;
+}
+
+.header {
+  background: #101827;
+  padding: 20px 7%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  border-bottom: 1px solid #263247;
+}
+
+.logo {
+  font-size: 27px;
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+
+.logo span {
+  color: #eab308;
+}
+
+nav {
+  display: flex;
+  gap: 22px;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: #d1d5db;
+  text-decoration: none;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #eab308;
+}
+
+.hero {
+  min-height: 390px;
+  padding: 90px 20px;
+  text-align: center;
+  background: linear-gradient(135deg, #111d35, #080d18);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.tag {
+  color: #eab308;
+  letter-spacing: 3px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.hero h1 {
+  font-size: clamp(27px, 5vw, 48px);
+  margin: 18px 0;
+}
+
+.hero p {
+  color: #aab4c5;
+}
+
+.main-btn {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 12px 30px;
+  background: #eab308;
+  color: #080d18;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.main-btn:hover {
+  background: #ffffff;
+  transform: translateY(-3px);
+}
+
+.section {
+  padding: 55px 7%;
+  min-height: 180px;
+}
+
+.section h2 {
+  font-size: 25px;
+  margin-bottom: 25px;
+  border-right: 4px solid #eab308;
+  padding-right: 12px;
+}
+
+#matches-container,
+#table-container,
+#clubs-container {
+  background: #101827;
+  border: 1px solid #263247;
+  border-radius: 12px;
+  padding: 25px;
+  color: #aab4c5;
+  text-align: center;
+}
+
+footer {
+  background: #101827;
+  border-top: 1px solid #263247;
+  padding: 35px 15px;
+  text-align: center;
+  color: #9ca3af;
+}
+
+footer p {
+  margin-top: 8px;
+  font-size: 13px;
+}
+
+@media (max-width: 600px) {
+  .header {
+    justify-content: center;
+    text-align: center;
+  }
+
+  nav {
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .section {
+    padding: 35px 5%;
+  }
+
+  .hero {
+    min-height: 330px;
+  }
+}
