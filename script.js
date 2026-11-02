@@ -8,7 +8,7 @@ const API_URL = "https://api.football-data.org/v4";
 async function apiRequest(endpoint) {
   const response = await fetch(API_URL + endpoint, {
     headers: {
-      "X-Auth-Token": "f39522e9848549fd988502f81df28f70"
+      "X-Auth-Token": "129c005bbd104331aed49d399b3bd0cf"
     }
   });
 
